@@ -40,7 +40,7 @@ class SecondViewModel @Inject constructor() : ViewModel() {
 
     fun setDiscount(value: String) {
         _formField.value = _formField.value.copy(
-            discount = if (value.isEmpty() || value.matches(InputFilterRegex.DecimalInput)) value else return
+            discount = value
         )
     }
 }
